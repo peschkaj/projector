@@ -2,6 +2,15 @@
 
 Generate C++ projects and project files on the fly.
 
+## Build Instructions
+
+``` shell
+mkdir -p build
+CC=clang CXX=clang++ cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug ..
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 .
+rc -J .
+```
+
 ## Usage
 
 `projector <verb> <noun>`
