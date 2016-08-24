@@ -12,12 +12,15 @@ namespace Projector
     {
     public:
         Project();
-        Project(string name);
+        Project(const string template_path, const string name);
         ~Project();
-        string get_name();
-        string get_path();
+        string get_name() const;
+        string get_path() const;
+        bool copy_template_contents() const;
+        void create_project_folder() const;
     private:
         string name;
+        filesystem::path source;
         filesystem::path directory;
         string git_url;
     };
