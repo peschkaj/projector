@@ -4,6 +4,7 @@ project (projector)
 include(ExternalProject)
 
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11" )
+set( CMAKE_EXPORT_COMPILE_COMMANDS 1 )
 
 set(DOCOPT_ROOT ${PROJECT_SOURCE_DIR}/external/docopt)
 set(DOCOPT_INCLUDE_DIRS ${DOCOPT_ROOT}/include/docopt)
