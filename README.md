@@ -17,8 +17,7 @@ rc -J .
 
 ### Commands
 
-`projector new <project>`
-`projector generate <class>`
+* `projector new <project>`
 
 ## Creating a new project
 
